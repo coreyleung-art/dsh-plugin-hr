@@ -1,0 +1,30 @@
+{
+  "name": "dsh-plugin-hr",
+  "version": "0.1.0",
+  "description": "资源管理模式（HR）插件：侧边栏资源看板 + 会话面板——资源/锁/档案/待办/preset-fit 评估可视化，配套 resource-manager preset",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "clean": "rm -rf lib"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-client-ui-primitives": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-slots": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-host-webserver": "^0.1.0-rc.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.0",
+    "typescript": "^5.4.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

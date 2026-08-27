@@ -1,0 +1,7 @@
+# dsh-plugin-hr：资源管理模式（HR）插件——侧边栏资源看板 + 会话面板
+# 配套 preset：resource-manager（~/.dsh/.agent-presets/resource-manager/）
+# 挂载：随 profile 启动常驻，CLD 重启自动恢复
+- insert:
+    - id: hr
+      name: dsh-plugin-hr
+      config: {}
