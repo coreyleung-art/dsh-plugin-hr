@@ -1,6 +1,6 @@
 {
   "name": "dsh-plugin-hr",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "资源管理模式（HR）插件：侧边栏资源看板 + 会话面板——资源/锁/档案/待办/preset-fit 评估可视化，配套 resource-manager preset",
   "main": "lib/index.js",
   "scripts": {
