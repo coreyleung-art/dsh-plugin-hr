@@ -1,11 +1,15 @@
 {
   "name": "dsh-plugin-hr",
   "version": "0.2.0",
+  "type": "module",
   "description": "资源管理模式（HR）插件：侧边栏资源看板 + 会话面板——资源/锁/档案/待办/preset-fit 评估可视化，配套 resource-manager preset",
   "main": "lib/index.js",
   "scripts": {
     "build": "node scripts/build.mjs",
-    "clean": "rm -rf lib"
+    "clean": "rm -rf lib",
+    "selfcheck": "ELECTRON_RUN_AS_NODE=1 /Applications/CLD.app/Contents/MacOS/CLD scripts/mount-smoke.mjs",
+    "selfcheck:fault": "ELECTRON_RUN_AS_NODE=1 /Applications/CLD.app/Contents/MacOS/CLD scripts/mount-smoke.mjs --control=fault",
+    "selfcheck:nodeps": "ELECTRON_RUN_AS_NODE=1 /Applications/CLD.app/Contents/MacOS/CLD scripts/mount-smoke.mjs --control=nodeps"
   },
   "peerDependencies": {
     "@deepseek-ai/cordis": "^4.0.1",
